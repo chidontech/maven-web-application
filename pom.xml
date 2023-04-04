@@ -6,7 +6,7 @@
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.1</version> 
+	<version>0.0.4</version> 
 	
 	<name>maven-web-application</name>
 
@@ -22,7 +22,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.141.9.30:9000/</sonar.host.url>
+		<sonar.host.url>http://3.128.160.93:9000/</sonar.host.url>
 		<sonar.login>003de521f5b69ee47cde1c0977fa37b3d3cc20d4</sonar.login>
 		<!-- <sonar.password>admin123</sonar.password> --> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://52.14.180.192:8181/donnet/repository/tesla-rel/</url>
+	      <url>http://3.128.29.220:8181/donnet/repository/paypal-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.14.180.192:8181/donnet/repository/tesla-sna/</url>
+	      <url>http://3.128.29.220:8181/donnet/repository/paypal-snap/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
