@@ -22,9 +22,9 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.128.160.93:9000/</sonar.host.url>
-		 <sonar.login>admin</sonar.login>
-		 <sonar.password>admin123</sonar.password> 
+		<sonar.host.url>http:3.15.184.159:9000/</sonar.host.url>
+		 <sonar.login>0e96b66f95249b66d30a51a38d64d1b96150c05b</sonar.login>
+	      <!-- <sonar.password>admin123</sonar.password>--> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.128.29.220:8181/donnet/repository/paypal-release/</url>
+	      <url>http://3.17.134.66:8181/donnet/repository/tesla-rel/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.128.29.220:8181/donnet/repository/paypal-snap/</url>
+	      <url>http:3.17.134.66:8181/donnet/repository/tesla-sna/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
