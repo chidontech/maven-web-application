@@ -1,0 +1,27 @@
+node{
+    def mavenHome = tool name: 'version_3.9.1'
+   stage('1.Codeclone'){
+       git credentialsId: 'gitbcredentails', url: 'https://github.com/chidontech/maven-web-application'
+    }
+    stage('2mavenbuild'){
+        sh "${mavenHome}/bin/mvn package"
+    }
+   stage('3Codequalityanalysis'){
+       sh "${mavenHome}/bin/mvn sonar:sonar"
+   }
+   stage('4Uploadartifact'){
+       sh "${mavenHome}/bin/mvn deploy"
+   } 
+   stage('5Depoly2UAT'){
+      sh "echo 'application ready for you review' "
+    timeout(time: 5, unit: 'HOURS') {
+    input message: 'Application ready for deployment, Please review and approve'
+}
+}
+ stage('6Depolyed2prod'){
+     deploy adapters: [tomcat9(credentialsId: 'tomcatcridentials', path: '', url: 'http://18.219.212.2:8080/')], contextPath: null, war: 'target/*war'
+ }
+ stage('emailNotification'){
+     emailext body: 'Congrats Team.Job well done', recipientProviders: [developers()], subject: 'ApplicationDepolyed', to: 'chidonchuck@yahoo.com'
+ }
+}
