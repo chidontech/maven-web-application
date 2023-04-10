@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.23.17.192:8181/donnet/repository/paypal-release/</url>
+	      <url>http://3.23.17.192:8181/donnet/repository/tesla-rel/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.23.17.192:8181/donnet/repository/paypal-snap/</url>
+	      <url>http://3.23.17.192:8181/donnet/repository/tesla-sna/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
